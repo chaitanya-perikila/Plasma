@@ -21,6 +21,7 @@ body{
     align-items: center;
 }
 .about button{
+    cursor: pointer;
     background:white;
     height: 55px;
     width: 190px;
@@ -31,6 +32,7 @@ body{
 }
 
 .contact button{
+    cursor: pointer;
     background: white;
     height: 55px;
     width: 190px;
@@ -58,17 +60,23 @@ body{
     margin-right: 20px;
 }
 .name{
+  
     font-family: 'Montserrat', sans-serif;
     font-size: 50px;
     font-weight: bolder;
 }
 
+.namee{
+    text-decoration: none;
+    color: black;
+}
 
 .buttons2{
     margin-left: 10%;
 }
 
 .google button{
+    cursor: pointer;
     display: flex;
     padding-left: 25px;
     padding-top: 17px;
@@ -92,6 +100,7 @@ body{
 }
 
 .facebook button{
+    cursor: pointer;
     display: flex;
     padding-left: 25px;
     padding-top: 17px;
