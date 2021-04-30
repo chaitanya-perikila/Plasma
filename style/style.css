@@ -1,10 +1,128 @@
-*{
-    padding: 0%;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-.navbar{
+
+.page2 {
+  background-color: #bbe1fa;
+
+  height: auto;
+  max-height: 100vh;
+}
+.playstore {
+  width: 400px;
+  position: relative;
+  top: -300px;
+
+  padding-left: 10px;
+  left: 100px;
+  z-index: -0;
+}
+.phone1 {
+  width: 300px;
+  position: relative;
+  left: 300px;
+  top: 75px;
+  z-index: 1;
+}
+.phone2 {
+  width: 300px;
+  position: relative;
+  left: 300px;
+  top: 175px;
+  z-index: 1;
+}
+.info {
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+  top: 0px;
+  padding-left: 140px;
+
+  z-index: 5;
+}
+.shade {
+  position: relative;
+  top: -492px;
+}
+.page3 {
+  background-color: #bbe1fa;
+}
+.aboutus {
+  font-family: "Montserrat", sans-serif;
+
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.cards {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.card {
+  height: 286px;
+  width: 278px;
+  background-color: white;
+  border-radius: 38.5px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+.card img {
+  width: 100px;
+}
+.array img {
+  width: 25px;
+}
+.array {
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  box-shadow: 0px 4px 10px 2px rgb(0, 0, 0, 0.25);
+}
+.name h3{
+    font-size: 18px;
+}
+.card :hover {
+}
+.contactus{
     display: flex;
-    flex-direction: row;
-    
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 50px;
+    font-family: "Montserrat", sans-serif;
+
+    height: 300px;
+    background-color: #76B2D9;
+}
+.footer{
+    font-family: "Montserrat", sans-serif;
+align-items: center;
+display: flex;
+justify-content: center;
+letter-spacing: 5px;
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    color: white;
+}
+.about button{
+    cursor: pointer;
+    background:white;
+    height: 55px;
+    width: 190px;
+    border-style: none;
+    border-radius: 29px;
+    font-size: 15px;
+    box-shadow: 0px 4px 10px 2px rgb(0, 0, 0, 0.25);
 }
