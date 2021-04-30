@@ -3,8 +3,133 @@
     margin: 0;
     box-sizing: border-box;
 }
+body{
+    overflow: hidden;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #BBE1FA;
+}
+
+.about{
+    margin-right: 50px;
+    
+ }
+
+.buttons1{
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    align-items: center;
+}
+.about button{
+    background:white;
+    height: 55px;
+    width: 190px;
+    border-style: none;
+    border-radius: 29px;
+    font-size: 15px;
+    box-shadow: 0px 4px 10px 2px rgb(0, 0, 0, 0.25);
+}
+
+.contact button{
+    background: white;
+    height: 55px;
+    width: 190px;
+    border-style: none;
+    border-radius: 29px;  
+    font-size: 15px;
+    box-shadow: 0px 4px 10px 2px rgb(0, 0, 0, 0.25);
+    /*horizontal vertical blurradius spread color*/
+}
+
+.contact{
+ margin-right: 100px;
+}
+
 .navbar{
     display: flex;
-    flex-direction: row;
+    margin-top: 52px;
+    margin-left: 52px;
+    align-items: center;
+    justify-content: flex-start;
+    flex: 1;
+}
+.logo{
+    height: 86px;
+    margin-right: 20px;
+}
+.name{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+
+.buttons2{
+    margin-left: 10%;
+}
+
+.google button{
+    display: flex;
+    padding-left: 25px;
+    padding-top: 17px;
+    background: white;
+    height: 50px;
+    width: 220px;
+    border-style: none;
+    border-radius: 29px;
+    font-size: 15px;
+    box-shadow: 0px 4px 10px 2px rgb(0, 0, 0, 0.25);
+    margin-top: 180px;
+    margin-bottom: 30px;
+}
+
+
+.facebook button img{
+    color: rgb(0, 0, 0);
+   height: 16px;
+   padding-right: 4px;
     
 }
+
+.facebook button{
+    display: flex;
+    padding-left: 25px;
+    padding-top: 17px;
+    background: #0E88E2;
+    color: white;
+    height: 50px;
+    width: 220px;
+    border-style: none;
+    border-radius: 29px;  
+    font-size: 15px;
+    box-shadow: 0px 4px 10px 2px rgb(0, 0, 0, 0.25);
+    /*horizontal vertical blurradius spread color*/
+}
+
+
+.d1{
+    font-weight: 500;
+    margin-top: 150px;
+    margin-left: 10%;
+    font-size: 20px;
+}
+
+.d2{
+    margin-top: 20px;
+    margin-left: 11.5%;
+    font-size: 9px;
+}
+
+.line{
+    position: absolute;
+    top: 0%;
+    
+    z-index: -5;
+}
+
+.map{
+    position: absolute;
+    left: 700px;
+    top: 200px;
+}
+
