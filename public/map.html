@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="./scripts/mapaa.css"></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
+    <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.css"
+      type="text/css"
+    />
+  
+    <link rel="stylesheet" href="./style/map.css">
+    <title>Plasma.</title>
+   
+</head>
+
+<body>
+     
+  <nav role="navigation">
+    <div id="menuToggle">
+      <input type="checkbox" />
+
+      <span></span>
+      <span></span>
+      <span></span>
+
+
+      <ul id="menu">
+        <li class="username">
+          <h2>Hey! User</h2>
+        </li>
+        <a href="#">
+          <li>My Profile</li>
+        </a>
+        <a href="#">
+          <li>Plasma Donated</li>
+        </a>
+        <a href="#">
+          <li>Plasma Recieved</li>
+        </a>
+        <a href="#">
+          <li>About Us</li>
+        </a>
+        <a href="#">
+          <li>Contact Us</li>
+        </a>
+        <a href="#">
+          <li class="red">Log Out</li>
+        </a>
+      </ul>
+    </div>
+  </nav>
+  <div class="plasma">Plasma.</div>
+
+  <div class="buttons ">
+   
+    <button class="b1"> <a style="text-decoration: none ; color: black;" href="https://docs.google.com/forms/d/1NFJJPs5becjaP3VvickHZTtKAiaGSzDsmmpWTSOTRAU/edit">Donate Plasma</a></button>
+    <button id="need" class="b1">Need Plasma</button>
+  </div>
+
+
+
+
+
+
+    <div id="map"></div>
+    <style>
+      .marker {
+        background-image: url('mapbox-icon.png');
+        background-size: cover;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+    </style>
+  
+    <!-- <script src="./map.js"></script> -->
+    <script>
+      mapboxgl.accessToken =
+"pk.eyJ1IjoidmlzaHdhMDgiLCJhIjoiY2tvNm9nN3QxMHNkcjJ2bjBlMHBwdjJiaiJ9.EzK-6_mOro7WJZJuuyhEKw"
+navigator.geolocation.getCurrentPosition(successLocation, errorLocation, {
+  enableHighAccuracy: true
+})
+
+
+function successLocation(position) {
+  
+  const map = new mapboxgl.Map({
+    container: "map",
+    style: "mapbox://styles/mapbox/streets-v11",
+    center: [position.coords.longitude, position.coords.latitude],
+    zoom: 12
+  }
+  );
+  var geojson = {
+    type: 'FeatureCollection',
+    features: [{
+      type: 'Feature',
+      geometry: {
+        type: 'Point',
+        coordinates: [position.coords.longitude+0.09, position.coords.latitude+0.09]
+      },
+      properties: {
+        title: 'Mapbox',
+        description: 'Washington, D.C.'
+      }
+    },
+    {
+      type: 'Feature',
+      geometry: {
+        type: 'Point',
+        coordinates: [position.coords.longitude-0.005, position.coords.latitude-0.005]
+      },
+      properties: {
+        title: 'Mapbox',
+        description: 'San Francisco, California'
+      }
+    },
+    {
+      type: 'Feature',
+      geometry: {
+        type: 'Point',
+        coordinates: [position.coords.longitude-0.009, position.coords.latitude +0.009]
+      },
+      properties: {
+        title: 'Mapbox',
+        description: 'San Francisco, California'
+      }
+    },
+    {
+      type: 'Feature',
+      geometry: {
+        type: 'Point',
+        coordinates: [position.coords.longitude-0.007, position.coords.latitude-0.01]
+      },
+      properties: {
+        title: 'Mapbox',
+        description: 'San Francisco, California'
+      }
+    }
+    ]
+  };
+  var geojson1 = {
+    type: 'FeatureCollection',
+    features: [{
+      type: 'Feature',
+      geometry: {
+        type: 'Point',
+        coordinates: [position.coords.longitude, position.coords.latitude]
+      },
+      properties: {
+        title: 'Mapbox',
+        description: 'Washington, D.C.'
+      }
+    },
+  ]
+  };
+  geojson.features.forEach(function (marker) {
+    // create a HTML element for each feature
+    var el = document.createElement('div');
+    el.className = 'marker';
+     
+    // make a marker for each feature and add it to the map
+    new mapboxgl.Marker(el)
+    .setLngLat(marker.geometry.coordinates).addTo(map);
+    });
+  geojson1.features.forEach(function (marker) {
+    // create a HTML element for each feature
+    var el = document.createElement('div');
+    el.className = 'marker1';
+     
+    // make a marker for each feature and add it to the map
+    new mapboxgl.Marker(el)
+    .setLngLat(marker.geometry.coordinates).addTo(map);
+    });
+  geojson.features.forEach(function (marker) {
+    // create a HTML element for each feature
+    var el = document.createElement('div');
+    el.className = 'marker';
+     
+    // make a marker for each feature and add it to the map
+    new mapboxgl.Marker(el)
+    .setLngLat(marker.geometry.coordinates).addTo(map);
+    });
+
+  const nav = new mapboxgl.NavigationControl()
+  map.addControl(nav)
+
+  var directions = new MapboxDirections({
+    accessToken: mapboxgl.accessToken
+  })
+ 
+
+  
+}
+
+
+function errorLocation() {
+  setupMap([-2.24, 53.48])
+}
+
+function setupMap(center) {
+  const map = new mapboxgl.Map({
+    container: "map",
+    style: "mapbox://styles/mapbox/streets-v11",
+    center: center,
+    zoom: 50
+  }
+  );
+  
+  //map.addControl(directions, "top-left")
+}
+// add markers to map
+
+    </script>
+</body>
+
+</html>

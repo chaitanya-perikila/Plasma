@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style/blood-style.css">
+    <title>Plasma.</title>
+    <link rel="shortcut icon"  type="image/ico" href="./resources/icon.png"/></head>
+    
+
+</head>
+<body>
+    <div class="navbar">    
+        <div class="logontitle">
+        <a href="#">    <img class="logo" src="./resources/icon.png" alt="logo">  </a>   
+        <a class="namee" href="#">    <div class="name"><h1 >Plasma.</h1></div>  </a>
+    </div>
+    </div>
+    
+    </div>
+    <img class="bloodcell" src="./resources/blood-cells 2.png" alt="">
+    <div class="temp">
+        <div class="text"><h1><span style="font-size: 50px;">Hey! Chaitanya</span><br/><br/>What's your Blood Group? </h1></div>
+        <div class="">
+            <div class="dropdown">
+                <div class="flexbox">
+                <button onclick="myFunction()" class="dropbtn">Blood group</button>
+            </div>
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="#">O +ve</a>
+                  <a href="#">O -ve</a>
+                  <a href="#">a +ve</a>
+                  <a href="#">a -ve</a>
+                  <a href="#">b +ve</a>
+                  <a href="#">b -ve</a>
+                  <a href="#">ab +ve</a>
+                  <a href="#">ab -ve</a>
+                </div>
+            </div>
+         <div/>     
+    </div>
+    <div class="cbtn">
+      <a href="map.html">
+        <button class="confirm">Confirm!</button>
+      </a>
+</div>
+</body>
+<script>/* When the user clicks on the button,
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+    
+    // Close the dropdown menu if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }</script>
+</html>

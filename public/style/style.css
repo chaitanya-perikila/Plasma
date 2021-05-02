@@ -1,0 +1,284 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.page2 {
+  background-color: #bbe1fa;
+
+  height: auto;
+  max-height: 100vh;
+}
+.playstore {
+  width: 400px;
+  position: relative;
+  top: -300px;
+
+  padding-left: 10px;
+  left: 100px;
+  z-index: -0;
+}
+.phone1 {
+  width: 350px;
+  position: relative;
+  left: 300px;
+  top: 75px;
+  z-index: 1;
+}
+.gap{
+    height: 300px;
+    width: 100%;
+}
+.phone2 {
+  width: 350px;
+  position: relative;
+  left: 300px;
+  top: 175px;
+  z-index: 1;
+}
+.info {
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+  top: 0px;
+  padding-left: 140px;
+
+  z-index: 5;
+}
+.shade {
+  position: relative;
+  top: -492px;
+}
+.page3 {
+  background-color: #bbe1fa;
+}
+.aboutus {
+  font-family: "Montserrat", sans-serif;
+
+  display: flex;
+  justify-content: center;
+  
+  padding-top: 170px;
+  padding-bottom: 30px;
+}
+.cards {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.shape1{
+    position: absolute;
+    right: 0px;
+}
+.card {
+  height: 250px;
+  width: 250px;
+  background-color: white;
+  border-radius: 38.5px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+.card img {
+  width: 100px;
+}
+.array img {
+  width: 25px;
+}
+.array {
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  box-shadow: 0px 4px 10px 2px rgb(0, 0, 0, 0.25);
+}
+.name h3{
+    font-size: 18px;
+}
+.card :hover {
+}
+.contactus{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 50px;
+    font-family: "Montserrat", sans-serif;
+
+    height: 300px;
+    background-color: #76B2D9;
+}
+.footer{
+    font-family: "Montserrat", sans-serif;
+align-items: center;
+display: flex;
+justify-content: center;
+letter-spacing: 5px;
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    color: white;
+}
+.about1 button{
+    cursor: pointer;
+    background:white;
+    height: 55px;
+    width: 190px;
+    border-style: none;
+    border-radius: 29px;
+    font-size: 15px;
+    box-shadow: 0px 4px 10px 2px rgb(0, 0, 0, 0.25);
+}
+
+
+/* ihdcvishv */
+*{
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x:hidden ;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #BBE1FA;
+}
+
+.about{
+    margin-right: 50px
+    
+ }
+
+.buttons1{
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    align-items: center;
+}
+.about button{
+    cursor: pointer;
+    background:white;
+    height: 55px;
+    width: 190px;
+    border-style: none;
+    border-radius: 29px;
+    font-size: 15px;
+    box-shadow: 0px 4px 10px 2px rgb(0, 0, 0, 0.25);
+}
+
+.contact button{
+    cursor: pointer;
+    background: white;
+    height: 55px;
+    width: 190px;
+    border-style: none;
+    border-radius: 29px;  
+    font-size: 15px;
+    box-shadow: 0px 4px 10px 2px rgb(0, 0, 0, 0.25);
+    /*horizontal vertical blurradius spread color*/
+}
+
+.contact{
+ margin-right: 100px;
+}
+
+.navbar{
+    display: flex;
+    margin-top: 52px;
+    margin-left: 52px;
+    align-items: center;
+    justify-content: flex-start;
+    flex: 1;
+}
+.logo{
+    height: 86px;
+    margin-right: 20px;
+}
+.name{
+  
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.namee{
+    text-decoration: none;
+    color: black;
+}
+
+.buttons2{
+    margin-left: 10%;
+}
+
+.google button{
+    cursor: pointer;
+    display: flex;
+    padding-left: 25px;
+    padding-top: 17px;
+    background: white;
+    height: 50px;
+    width: 220px;
+    border-style: none;
+    border-radius: 29px;
+    font-size: 15px;
+    box-shadow: 0px 4px 10px 2px rgb(0, 0, 0, 0.25);
+    margin-top: 180px;
+    margin-bottom: 30px;
+}
+
+
+.facebook button img{
+    color: rgb(0, 0, 0);
+   height: 16px;
+   padding-right: 4px;
+    
+}
+
+.facebook button{
+    cursor: pointer;
+    display: flex;
+    padding-left: 25px;
+    padding-top: 17px;
+    background: #0E88E2;
+    color: white;
+    height: 50px;
+    width: 220px;
+    border-style: none;
+    border-radius: 29px;  
+    font-size: 15px;
+    box-shadow: 0px 4px 10px 2px rgb(0, 0, 0, 0.25);
+    /*horizontal vertical blurradius spread color*/
+}
+
+
+.d1{
+    font-weight: 500;
+    margin-top: 150px;
+    margin-left: 10%;
+    font-size: 20px;
+}
+
+.d2{
+    margin-top: 20px;
+    margin-left: 11.5%;
+    font-size: 9px;
+}
+
+.line{
+    position: absolute;
+    top: 0%;
+    
+    z-index: -5;
+}
+
+.map{
+    position: absolute;
+    left: 700px;
+    top: 200px;
+}
+

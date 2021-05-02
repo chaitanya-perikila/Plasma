@@ -1,0 +1,24 @@
+{
+  "name": "plasma",
+  "version": "1.0.0",
+  "description": "\"# plasma\" \r the plasma donating platform",
+  "main": "app.js",
+  
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+ 
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chaitanya-perikila/Plasma.git"
+  },
+  "author": "ck",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chaitanya-perikila/Plasma/issues"
+  },
+  "homepage": "https://github.com/chaitanya-perikila/Plasma#readme",
+  "dependencies": {
+    "firebase": "^8.4.3"
+  }
+}

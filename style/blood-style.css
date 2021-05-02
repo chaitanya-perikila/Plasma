@@ -1,0 +1,114 @@
+*{
+    margin: 0%;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #bbe1fa;
+}
+.logontitle{
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+    
+    align-items: center;
+}
+.navbar{
+    display: flex;
+    justify-content: end;
+    margin: 52px;
+}
+.name{
+    color: black;
+    font-size: 25px;
+}
+.logo{
+    margin-right: 20px;
+}
+/* Dropdown Button */
+.dropbtn {
+    background-color: #ff5c5c;
+    color: rgb(102, 0, 0);
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Dropdown button on hover & focus */
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #ff6d6d;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd}
+  
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {display:block;}
+  .dropbtn{
+      border-radius: 32.5px;
+      padding: 25px;
+  }
+  .temp{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      height: 70%;
+  }
+  .text{
+      padding: 30px;
+      padding-top: 0px;
+      text-align: center;
+  }
+  .bloodcell{
+      position: absolute;
+      left: 100px;
+      top: 500px;
+      width: 250px;
+  }
+  .confirm{
+     padding: 50px;
+     margin-top: 50px;
+      border-radius: 32.5px;
+      border-style: none;
+      background-color: peachpuff;
+
+  }
+.cbtn{
+    position: absolute;
+    right: 25%;
+    top: 50%;
+}.confirm:hover{
+    background-color: rgb(252, 120, 97);
+
+}
+.flexbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+}
